@@ -1,4 +1,4 @@
 FROM almalinux:9
-ENV course="Docker"\
+ENV course="devops"\
     duration="2hrs"\
     Trainer="Siva kumar"
