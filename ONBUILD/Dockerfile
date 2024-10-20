@@ -1,7 +1,6 @@
-ARG version
-FROM almalinux:${version:-9}
+FROM almalinux:9
 RUN dnf install nginx -y
-RUN rm -f /usr/share/nginx/html/index.html
-#ONBUILD instructions runs only, when any other user uses your image
-ONBUILD COPY index.htmi /usr/share/nginx/html/index.html
-CMD [ "sleep", "100" ]
+RUN rm -rf /usr/share/nginx/html/index.html
+# This onbuild instruction runs only, when any user uses your image
+ONBUILD COPY index.html /usr/share/nginx/html/index.html
+CMD ["nginx", "-g", "daemon off;"]
