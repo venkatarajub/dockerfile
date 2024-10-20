@@ -1,5 +1,5 @@
 ARG version
-FROM almalinux:$(version: -9)
+FROM almalinux:${version:-9}
 RUN dnf install nginx -y
 RUN rm -f /usr/share/nginx/html/index.html
 #ONBUILD instructions runs only, when any other user uses your image
