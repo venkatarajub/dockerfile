@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux:${version}
 # ARGs (arguments) are used provide the variables  and  at build time.
 ARG course="Devops with AWS" \
     duration="130hrs"
