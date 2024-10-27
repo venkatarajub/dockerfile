@@ -5,4 +5,9 @@ CMD [ "nginx", "-g", "daemon off;" ]
 LABEL course="devops" \
     tariner="Siva kumar" \
     duration="120hrs"
+    # labels are add metadata to the images they are usefull in  the image filteration
+EXPOSE 80
+ENV session="terraform"  \
+    trainer="MSR" \
+    duration="5hrs"
 
