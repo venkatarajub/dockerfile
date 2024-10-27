@@ -14,6 +14,7 @@ RUN rm -f /usr/share/nginx/html/index.html
 #COPY index.html /usr/share/nginx/html/index.html
 ADD https://raw.githubusercontent.com/venkatarajub/terraform-aws-ec2/refs/heads/main/readme.MD /usr/share/nginx/html/index.html
 RUN chmod +r /usr/share/nginx/html/index.html
+ADD sample-1.tar /tmp
 
 
 
