@@ -12,8 +12,7 @@ ENV session="terraform"  \
     duration="5hrs"
 RUN rm -f /usr/share/nginx/html/index.html
 #COPY index.html /usr/share/nginx/html/index.html
-ADD https://github.com/venkatarajub/terraform-aws-ec2/blob/main/readme.MD /usr/share/nginx/html/index.html
-RUN chmod +x /usr/share/nginx/html/index.html
+
 
 
 
